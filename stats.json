@@ -1,0 +1,52 @@
+{
+  "assetsByChunkName": {
+    "component---src-pages-index-js": [
+      "component---src-pages-index-js-1407f6a842f947fd943b.js",
+      "component---src-pages-index-js-1407f6a842f947fd943b.js.map"
+    ],
+    "path---": [
+      "path----e5069373e2adbc0d4166.js",
+      "path----e5069373e2adbc0d4166.js.map"
+    ],
+    "component---src-layouts-index-js": [
+      "component---src-layouts-index-js-d284205fa3a4caf4255b.js",
+      "component---src-layouts-index-js-d284205fa3a4caf4255b.js.map"
+    ],
+    "component---src-pages-coursera-js": [
+      "component---src-pages-coursera-js-0da02651680136a7fe20.js",
+      "component---src-pages-coursera-js-0da02651680136a7fe20.js.map"
+    ],
+    "path---index": [
+      "path---index-a0e39f21c11f6a62c5ab.js",
+      "path---index-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "component---src-pages-404-js": [
+      "component---src-pages-404-js-4503918ea3a16cfcdb75.js",
+      "component---src-pages-404-js-4503918ea3a16cfcdb75.js.map"
+    ],
+    "commons": [
+      "commons-ba4cb63d6a7a0250cd9f.js",
+      "build-js-styles.css",
+      "commons-ba4cb63d6a7a0250cd9f.js.map",
+      "build-js-styles.css.map"
+    ],
+    "path---404-html": [
+      "path---404-html-a0e39f21c11f6a62c5ab.js",
+      "path---404-html-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "path---coursera": [
+      "path---coursera-a0e39f21c11f6a62c5ab.js",
+      "path---coursera-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "app": [
+      "app-be723e67b19a98a04606.js",
+      "build-js-styles.css",
+      "app-be723e67b19a98a04606.js.map",
+      "build-js-styles.css.map"
+    ],
+    "path---404": [
+      "path---404-a0e39f21c11f6a62c5ab.js",
+      "path---404-a0e39f21c11f6a62c5ab.js.map"
+    ]
+  }
+}
