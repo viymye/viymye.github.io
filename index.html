@@ -1,0 +1,214 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Victoria Ye</title>
+  <meta name="description" content="Victoria Ye Portfolio">
+  <meta name="author" content="Victoria Ye">
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <script src="anime.min.js" type="text/javascript"></script>
+  <script src="jquery.waypoints.min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+
+  jQuery(document).ready(function(){
+      $('#lineDrawing').waypoint(function() {
+        var lineDrawing = anime({
+          targets: '#lineDrawing .lines path',
+          strokeDashoffset: [anime.setDashoffset, 0],
+          easing: 'easeInOutSine',
+          duration: 1800,
+          delay: function(el, i) { return i * 250 },
+          direction: 'alternate',
+          loop: false
+        });
+      }, {
+              offset: '75%'
+      });
+  });
+
+  </script>
+
+  <script>
+
+
+  window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+        // document.getElementById("HeaderContainer").style.padding = "5px 0px";
+        document.getElementById("logo").style.width = "30px";
+      } else {
+        // document.getElementById("HeaderContainer").style.padding = "80px 10px";
+        document.getElementById("logo").style.width = "50px";
+
+      }
+    }
+
+  </script>
+
+</head>
+
+<body>
+
+  <div id="HeaderContainer">
+    <div class="Header">
+      <a href="about.html" class="linkunder">About</a>
+      <a href="index.html"><img src="images/vy.png" id="logo" width="50px"/></Link>
+      <a href="images/VictoriaYeResume.pdf" target='_blank' class="linkunder">Resume</a>
+    </div>
+  </div>
+
+
+  <div class="Main">
+
+    <div class="MainGroupOne" data-bg-text="V">
+      <div class="ContentOne">
+        <div class="OneText">
+          <h2>Hi, I'm <span class="underline victoria"><a href="about.html">Victoria Ye</a>
+            <div class="yours messages">
+              <div class="message last">
+                Who?
+              </div>
+            </div></span>
+          </h2>
+          <p>I'm so glad you were able to find your way here. Thanks for stopping by!</p>
+        </div>
+        <img src="images/face2.png"></img>
+      </div>
+
+
+      <div id="lineDrawing"> <svg width="100vw" height="100vh">
+            <g fill="none" fill-rule="evenodd" stroke="#A5A74B" stroke-width="2" class="lines" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M461.343647,35 C438.612615,56.6083744 411.600052,68.1121133 380.30596,69.5112166 C333.364822,71.6098717 248.824066,69.7444005 223.134885,160.68612 C197.445705,251.62784 335.233126,228.30945 432.151397,256.991069 C529.069667,285.672688 619.665033,325.107612 636.479769,389 C627.930233,385.144035 624.941794,383.787713 627.514451,384.931034 L636.479769,389 L643,379.234483" id="Path-5"></path>
+            </g>
+          </svg> </div>
+
+    </div>
+
+
+    <div class="MainGroupTwo">
+      <div class="ContentTwo">
+        <h2>This is filler text because I have no idea how to brand myself as a designer!</h2>
+      </div>
+    </div>
+
+    <div class="MainGroupThree">
+      <div class="ContentThree">
+        <h1><span class="overline">Latest</span></h1>
+        <p>Most recently, I was an intern at eBay (an amazing experience that I highly recommend).</p><br/>
+        <img src="images/arrow2.png" class="arrowtwo"></img>
+
+
+        <div class="CardContainer">
+          <div class="Card">
+
+            <div class="card__image">
+              <img src="images/ebay.png" alt="ebay logo" />
+            </div>
+            <div class="card__category">Internship</div>
+            <div class="card__title">Design at eBay</div>
+            <div class="card__description">During the summer of 2018, I was a product design intern at eBay under the Buyer Experience team.</div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="MainGroupFour">
+      <div class="ContentFour">
+        <h1><span class="overline">All work</span></h1>
+        <div class="CardGroup">
+
+          <a href="coursera.html">
+                  <div class="CardContainer">
+                    <div class="Card">
+
+                      <div class="card__image">
+                        <img src="images/mockup.png" alt="mockup" />
+                      </div>
+                      <div class="card__category">UX Design</div>
+                      <div class="card__title">Coursera Redesign</div>
+                      <div class="card__description">Exploring ways to make Coursera's platform more conducive to social learning.</div>
+
+                    </div>
+                  </div>
+          </a>
+
+          <a href="ina.html">
+                  <div class="CardContainer">
+                    <div class="Card">
+
+                      <div class="card__image">
+                        <img src="images/ina.png" alt="ina" />
+                      </div>
+                      <div class="card__category">UX Research/Design</div>
+                      <div class="card__title">Conversational UI</div>
+                      <div class="card__description">A design for a voice-based CUI to support and facilitate healthy eating habits.</div>
+
+                    </div>
+                  </div>
+          </a>
+
+
+          <a href="dailyui.html">
+                  <div class="CardContainer">
+                    <div class="Card">
+
+                      <div class="card__image">
+                        <img src="images/daily.png" alt="daily ui design" />
+                      </div>
+                      <div class="card__category">UI Design</div>
+                      <div class="card__title">Daily UI Challenge</div>
+                      <div class="card__description">Testing new interactions and learning new tools through daily UI prompts.</div>
+
+                    </div>
+                  </div>
+          </a>
+
+
+          <a href="tedxcmu.html">
+                  <div class="CardContainer">
+                    <div class="Card">
+
+                      <div class="card__image">
+                        <img src="images/tedx.png" alt="tedxcmu" />
+                      </div>
+                      <div class="card__category">Identity/Print</div>
+                      <div class="card__title">TEDxCMU Design</div>
+                      <div class="card__description">Creating and maintaining a strong visual identity for the organization and annual conference.</div>
+
+                    </div>
+                  </div>
+          </a>
+
+
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+  <!-- <div class="background" id="background1"></div> -->
+  <div class="background" id="background2"></div>
+  <div class="background" id="background3"></div>
+  <div id="left"></div>
+  <div id="right"></div>
+  <div id="top"></div>
+  <div id="bottom"></div>
+
+
+</body>
+
+</html>
