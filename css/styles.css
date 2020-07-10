@@ -436,6 +436,9 @@ img#profile {
     width: 15px;
     height: auto;
   }
+  #sparkbutton {
+    display: none;
+  }
 }
 
 /* Small devices (landscape phones, less than 768px) */
