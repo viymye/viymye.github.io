@@ -1,3 +1,5 @@
+<!-- STOP looking at my code PLEASE there is nothing good to see here -->
+
 <!DOCTYPE HTML>
 
 <html lang="en">
@@ -12,17 +14,21 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
-  <link href="https://fonts.googleapis.com/css?family=Noto+Serif&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato|Spectral:300,800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Martel+Sans&display=swap" rel="stylesheet">
+
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/svg.js/3.0.13/svg.js" integrity="sha256-SbaK8OY+scYVgjfb8SSK9hgQgBqFVNUBXmXAjGvjk08=" crossorigin="anonymous"></script>
-  <script src="js/svg.min.js"></script>
-  <script src="js/drag.js"></script>
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+  <script src="js/cursor.js"></script>
+  <script src="js/titlefx.js"></script>
 
-  <!-- Global site tag (gtag.js) - Google Analytics
+  <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126299862-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -31,46 +37,261 @@
 
     gtag('config', 'UA-126299862-1');
   </script>
-  -->
 
 </head>
 
 <body>
-  <div id="canvas">
-
-    <svg xmlns="http://www.w3.org/2000/svg" width=100% height=100% viewBox="0 0 100.17 100.64" onload="makeDraggable(evt)">
-      <g class="draggable-group">
-        <path d="M5.86.27l.42.4a1,1,0,0,0,.8.26L7.66.85a1,1,0,0,1,1.09.79l.11.58a1,1,0,0,0,.49.68l.51.28a1,1,0,0,1,.42,1.28L10,5a1,1,0,0,0,0,.84l.25.53a1,1,0,0,1-.42,1.28l-.51.28a1,1,0,0,0-.49.68l-.11.57A1,1,0,0,1,7.66,10l-.58-.07a1,1,0,0,0-.8.26l-.42.4a1,1,0,0,1-1.35,0l-.42-.4a1,1,0,0,0-.8-.26L2.71,10a1,1,0,0,1-1.09-.79l-.1-.57A1,1,0,0,0,1,7.91L.51,7.63A1,1,0,0,1,.09,6.35l.25-.53A1,1,0,0,0,.34,5L.09,4.46A1,1,0,0,1,.51,3.18L1,2.9a1,1,0,0,0,.5-.68l.1-.58A1,1,0,0,1,2.71.85l.58.08a1,1,0,0,0,.8-.26l.42-.4A1,1,0,0,1,5.86.27Z" style="fill:#f49cbe"/><path d="M3.15,4.93H2.61V4.84h.12c.06-.39.12-.78.16-1.16H2.78V3.57h.52l0,.09H3.17c0,.17,0,.33-.07.49h.52l.09.06c0-.19,0-.37.07-.55H3.66V3.57h.51v.09H4.05c-.06.39-.12.78-.16,1.16H4l0,.1H3.49V4.84h.12c0-.18,0-.36.08-.54H3.08c0,.18-.05.36-.07.54h.11l0,.1Z" style="fill:#231f20"/><path d="M4.59,5c-.28,0-.4-.12-.37-.37l0-.14a.44.44,0,0,1,.25-.35A.48.48,0,0,1,4.76,4C5,4,5,4.08,5,4.22a1.12,1.12,0,0,1,0,.22l-.19.08H4.46v.05c0,.17.06.23.25.23A.51.51,0,0,0,5,4.71H5v0A.49.49,0,0,1,4.59,5Zm-.11-.54H4.8a1,1,0,0,0,0-.15c0-.09-.06-.13-.17-.13s-.14,0-.15.15Z" style="fill:#231f20"/><path d="M5.2,4.75l.13-.85c0-.2,0-.29,0-.32H5.26V3.48h.36L5.44,4.71c0,.07,0,.09.11.09a.22.22,0,0,0,.11,0h0v0A.32.32,0,0,1,5.39,5C5.24,5,5.18,4.89,5.2,4.75Z" style="fill:#231f20"/><path d="M5.8,4.75l.13-.85c0-.2,0-.29,0-.32H5.86V3.48h.37L6.05,4.71c0,.07,0,.09.1.09a.22.22,0,0,0,.11,0h0v0A.34.34,0,0,1,6,5C5.85,5,5.78,4.89,5.8,4.75Z" style="fill:#231f20"/><path d="M6.39,4.59l0-.16a.45.45,0,0,1,.24-.34A.58.58,0,0,1,6.93,4c.26,0,.37.11.33.36l0,.15A.42.42,0,0,1,7,4.85a.53.53,0,0,1-.28.1C6.46,5,6.35,4.84,6.39,4.59Zm.6,0,0-.24c0-.19,0-.25-.2-.25s-.14.05-.16.17l0,.25c0,.19,0,.25.2.25S7,4.76,7,4.63Z" style="fill:#231f20"/><path d="M7.32,5.23h0a.39.39,0,0,0,.18-.29c-.07,0-.12,0-.12-.1s0-.17.15-.17.12,0,.12.12a.55.55,0,0,1-.26.48Z" style="fill:#231f20"/><path d="M3.3,7.06h0L3.2,6.42A4.9,4.9,0,0,1,2.93,7l-.22.06h0l-.07-.63a.58.58,0,0,0,0-.17H2.52V6.14l.29,0h0s0,.08.06.27l0,.46a3.12,3.12,0,0,0,.27-.69l.2,0h0l.1.74a1.59,1.59,0,0,0,.22-.72h0l.21,0h0a3.16,3.16,0,0,1-.43.9Z" style="fill:#231f20"/><path d="M4,6.69l0-.15a.45.45,0,0,1,.24-.34.53.53,0,0,1,.28-.1c.26,0,.37.12.34.36l0,.16A.45.45,0,0,1,4.6,7a.62.62,0,0,1-.29.09C4.06,7.05,4,6.94,4,6.69Zm.6,0,0-.25c0-.19-.06-.25-.2-.25s-.15,0-.16.18l0,.25c0,.18.06.24.2.24S4.57,6.86,4.58,6.74Z" style="fill:#231f20"/><path d="M5,7.06H5l.09-.56c0-.17,0-.24-.09-.25v0L5.2,6.1h0a.22.22,0,0,1,.14.24c.08-.18.12-.22.26-.22h.12l0,.12c0,.08,0,.09-.08.09h-.1c-.09,0-.14.06-.17.28L5.28,7h0Z" style="fill:#231f20"/><path d="M5.79,6.85,5.92,6c0-.19,0-.28,0-.32H5.84l0-.08.36,0h0L6,6.82c0,.06,0,.09.11.09a.19.19,0,0,0,.1,0h0v0A.36.36,0,0,1,6,7.05C5.83,7.05,5.76,7,5.79,6.85Z" style="fill:#231f20"/><path d="M7.1,7.1h0A.21.21,0,0,1,7,6.92a.39.39,0,0,1-.3.13.27.27,0,0,1-.29-.35l0-.14a.43.43,0,0,1,.23-.34A.66.66,0,0,1,7,6.11H7l0-.11c0-.19,0-.28,0-.32H7V5.59l.36,0h0L7.19,6.71c0,.17,0,.24.09.25V7Zm-.33-.21c.11,0,.16,0,.18-.16L7,6.29a.34.34,0,0,0-.18,0c-.12,0-.17,0-.2.2l0,.21C6.58,6.85,6.64,6.89,6.77,6.89Z" style="fill:#231f20"/><path d="M7.48,7c0-.11,0-.16.15-.16s.1,0,.1.09,0,.17-.15.17S7.48,7,7.48,7Zm.11-.27.08-1h0l.23,0h0l-.22,1-.1,0Z" style="fill:#231f20"/>
-      </g>
-      <g class="draggable-group">
-        <polygon points="24.15 0 28.05 8.49 35.45 2.79 34.97 12.12 44.17 10.51 39.4 18.54 48.3 21.39 40.34 26.29 46.89 32.95 37.57 33.59 40.28 42.53 31.73 38.77 29.97 47.95 24.15 40.64 18.33 47.95 16.57 38.77 8.02 42.53 10.72 33.59 1.4 32.95 7.96 26.29 0 21.39 8.9 18.54 4.13 10.51 13.33 12.12 12.84 2.79 20.25 8.49 24.15 0" style="fill:#308741"/><path d="M15.27,21.38l.53-.26c.15.3.68.33,1.25.06s.82-.63.68-.91-.87-.17-1.37,0c-.78.22-1.48.12-1.78-.5A1.36,1.36,0,0,1,15.44,18a1.4,1.4,0,0,1,2,.43l-.53.25c-.13-.27-.61-.3-1.14,0s-.76.58-.63.85.94.13,1.28,0c.83-.24,1.55-.18,1.86.46s-.1,1.46-.91,1.86A1.47,1.47,0,0,1,15.27,21.38Z" style="fill:#c5dc7d"/><path d="M20.7,12.71l.57,0L21,16.87l-.56,0Z" style="fill:#c5dc7d"/><path d="M31.32,21.68l.5-.25,1.84,3.7-.51.25Z" style="fill:#c5dc7d"/><path d="M21.21,32.33l.28,1,1.88-.55.21.7L21.69,34l.47,1.6-.55.16-1.15-4L23.13,31l.2.7Z" style="fill:#c5dc7d"/><path d="M30.85,33.38l-.69-3.08.62.2.53,2.1.13,0,1.68-1.37.65.22-2.38,2.06-.45,1.35-.54-.18Z" style="fill:#c5dc7d"/><path d="M26.48,13l.8.26.43,2.51.14.05,1.83-1.77.83.28-1.28,3.92-.55-.18.95-2.88-.13,0-1.75,1.74-.57-.18-.37-2.45-.13,0-.95,2.88-.54-.18Z" style="fill:#c5dc7d"/><path d="M18.14,26.43a1.35,1.35,0,0,1-1.5,1.26l-1.29-.1L15.24,29l-.56-.05L15,24.82l1.86.14A1.35,1.35,0,0,1,18.14,26.43Zm-.58,0c0-.39-.29-.67-.78-.71l-1.28-.09-.1,1.27,1.28.1C17.17,27,17.53,26.76,17.56,26.39Z" style="fill:#c5dc7d"/><path d="M26.24,25.51l-.15.72-2.6-.55.84-4,.56.12-.7,3.33Z" style="fill:#c5dc7d"/>
-      </g>
-
-    </svg>
-  </div>
-
 
   <div class="container">
+    <button id="sparkbutton"><img id="sparkimg" src="images/sparkoff.png" width="20px"></button>
 
     <!-- Side navigation -->
-    <div class="sidenav">
-      <h1>Vicky Ye, designer of <i>digital products</i>, in pursuit of <i>delight</i> ™
-      <a href="#">Work</a>
-      <a href="#">Play</a>
-      <a href="#">About</a>
-    </div>
+    <!-- <div class="sidenav">
+      <a href=""><img src="images/smiley.png" style="width:40px;"></a>
+      <h1>Vicky Ye, designer of <i>digital products</i>, in pursuit of <i>delight</i> ™</h1>
+      <a href="#" class="navlink">Work</a>
+      <a href="#" class="navlink">Play</a>
+      <a href="#" class="navlink">About</a>
+    </div> -->
 
     <!-- Page content -->
-    <div class="main" style="height:5000px;">
+    <div class="main">
+      <div class="header">
+        <svg width="551px" height="149px" viewBox="15 0 550 159" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <defs>
+                <filter id="myblurfilter" x="-50%" y="-50%" width="200%" height="200%">
+                  <feGaussianBlur stdDeviation="5" result="blur" />
+                </filter>
+                <polygon id="header-fnv" points="93.8 41.15 77.15 53.45 49.85 112.85 49.7 112.7 46.7 119.45 16.1 52.85 0.65 41.15 45.65 41.15 35.3 49.7 52.4 90.05 69.2 51.8 59.3 41.15 73.7 41.15 73.7 41.6 73.85 41.15"></polygon>
+                <path d="M90.05,113 L100.85,102.5 L100.85,59.75 L90.05,54.2 L100.85,47.6 L109.7,42.2 L118.85,36.65 L118.85,102.5 L130.4,113 L90.05,113 Z M99.35,17 C99.35,10.85 104.45,5.6 110.75,5.6 C116.9,5.6 122.15,10.85 122.15,17 C122.15,23.3 116.9,28.4 110.75,28.4 C104.45,28.4 99.35,23.3 99.35,17 Z" id="header-fni"></path>
+                <path d="M174.05,114.5 C152.45,114.5 138.2,99.35 138.2,79.4 C138.2,55.4 154.55,39.65 177.35,39.65 C191.45,39.65 202.7,48.5 202.7,60.65 C202.7,66.65 198.8,72.2 191.9,72.2 C186.35,72.2 181.25,68.75 181.25,61.25 C181.25,55.25 184.7,46.7 175.7,46.7 C164.45,46.7 155.15,56.6 155.15,71 C155.15,89.3 165.65,99.35 180.2,99.35 C189.5,99.35 200,95.15 204.95,85.25 C204.95,102.2 189.05,114.5 174.05,114.5 Z" id="header-fnc"></path>
+                <polygon id="header-fnk" points="211.7 113 222.65 102.35 222.65 24.95 211.85 19.7 240.65 0.5 240.5 69.95 245.3 69.95 267.05 52.4 258.5 41.15 293.3 41.15 285.5 47.15 258.8 68.3 286.55 102.2 298.55 112.85 261.05 112.85 267.05 107 244.7 79.4 244.4 79.55 243.5 78.2 240.5 78.2 240.5 102.5 252.2 113"></polygon>
+                <path d="M380,41.15 L363.65,53.3 L332.3,123.65 C326.75,136.85 319.55,148.55 307.1,148.55 C297.05,148.55 291.2,144.5 287.3,136.55 L304.1,117.2 C302.6,128.3 308.45,131.3 313.25,131.3 C319.55,131.3 323.3,122.3 325.25,119 L328.85,110.9 L302.3,52.85 L286.85,41.15 L331.85,41.15 L320.45,50.45 L338.3,89.9 L355.25,51.8 L345.5,41.15 L359.9,41.15 L359.9,41.45 L360.05,41.15 L380,41.15 Z" id="header-fny"></path>
+                <path d="M503.9,41.15 L487.55,53.3 L456.2,123.65 C450.65,136.85 443.45,148.55 431,148.55 C420.95,148.55 415.1,144.5 411.2,136.55 L428,117.2 C426.5,128.3 432.35,131.3 437.15,131.3 C443.45,131.3 447.2,122.3 449.15,119 L452.75,110.9 L426.2,52.85 L410.75,41.15 L455.75,41.15 L444.35,50.45 L462.2,89.9 L479.15,51.8 L469.4,41.15 L483.8,41.15 L483.8,41.45 L483.95,41.15 L503.9,41.15 Z" id="header-lny"></path>
+                <path d="M538.25,114.5 C515,114.5 503,96.95 503,78.5 C503,57.5 517.25,39.65 539.15,39.65 C551.6,39.65 568.85,45.8 570.35,66.65 L570.5,66.65 L570.5,74.15 L519.95,74.15 C520.55,89.3 530,99.35 544.85,99.35 C555.35,99.35 564.05,94.85 569.9,85.4 C569.9,102.35 554,114.5 538.25,114.5 Z M536.9,46.7 C528.8,46.7 520.1,53.9 519.95,66.65 L551.3,66.65 C551.3,54.8 546.35,46.7 536.9,46.7 Z" id="header-lne"></path>
+            </defs>
+            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g id="Path" fill-rule="nonzero">
+                    <use fill="#FFFFFF" xlink:href="#header-fnv"></use>
+                </g>
+                <g id="Combined-Shape" fill-rule="nonzero">
+                    <use fill="#FFFFFF" xlink:href="#header-fni"></use>
+                </g>
+                <g id="Path" fill-rule="nonzero">
+                    <use fill="#FFFFFF" xlink:href="#header-fnc"></use>
+                </g>
+                <g id="Path" fill-rule="nonzero">
+                    <use fill="#FFFFFF" xlink:href="#header-fnk"></use>
+                </g>
+                <g id="Path" fill-rule="nonzero">
+                    <use fill="#FFFFFF" xlink:href="#header-fny"></use>
+                </g>
+                <g id="Path" fill-rule="nonzero">
+                    <use fill="#FFFFFF" xlink:href="#header-lny"></use>
+                </g>
+                <g id="Combined-Shape" fill-rule="nonzero">
+                    <use fill="#FFFFFF" xlink:href="#header-lne"></use>
+                </g>
+            </g>
+        </svg>
+        <!-- <h1>vicky ye</h1> -->
+        <div id="headerdesc">
+          <p>Hi, I'm a digital product designer currently working at Asana. Previously, I studied Information Systems and Human Computer Interaction at Carnegie Mellon University.</p>
+          <!-- <img id="profile" src="images/prof.png"> -->
+        </div>
+
+      </div>
+
+      <div class="content">
+
+        <div class="work">
+          <h2>work <span class="smoltxt">(THEY'RE ALL LOCKED)</span></h2>
+          <table>
+            <tbody>
+              <tr>
+                <td>01</td>
+                <td>EBAY FASHION</td>
+                <td>INTERNSHIP, PRODUCT</td>
+                <td><img src="images/lock.png" height="20px"></td>
+              </tr>
+              <tr>
+                <td>02</td>
+                <td>NEWS APP DESIGN</td>
+                <td>SELF-INITIATED, UX</td>
+                <td><img src="images/lock.png" height="20px"></td>
+              </tr>
+              <tr>
+                <td>03</td>
+                <td>COURSERA CASE STUDY</td>
+                <td>DESIGN CHALLENGE, UX & UI</td>
+                <td><img src="images/lock.png" height="20px"></td>
+              </tr>
+            </tbody>
+          </table>
+
+        </div>
+
+      </div>
 
 
-      <a href="/">dfsdf</a>
+
+
+      <div id="stickers">
+          <!-- <img src="images/stickers/Asset 70@4x.png" width="92" id="readsticker" class="draggable">
+          <img src="images/stickers/Asset 67@4x.png" width="77" id="finalsticker" class="draggable">
+          <img src="images/stickers/Asset 71@4x.png" width="99" id="lucksticker" class="draggable">
+          <img src="images/stickers/Asset 74@4x.png" width="99" id="sublimesticker" class="draggable">
+          <img src="images/stickers/Asset 69@4x.png" width="88" id="cookiesticker" class="draggable">
+          <img src="images/stickers/Asset 76@4x.png" width="94" id="helloticker" class="draggable">
+          <img src="images/stickers/Asset 72@4x.png" width="112" id="simplifysticker" class="draggable">
+          <img src="images/stickers/Asset 75@4x.png" width="89" id="uxsticker" class="draggable">
+          <img src="images/stickers/Asset 73@4x.png" width="102" id="beachsticker" class="draggable">
+          <img src="images/stickers/Asset 68@4x.png" width="117" id="cornersticker" class="draggable"> -->
+          <img src="images/stickers/Asset 74@4x.png" class="draggable sticker" id="sublimesticker">
+          <img src="images/stickers/Asset 68@4x.png" class="draggable sticker" id="cornersticker">
+          <img src="images/stickers/Asset 70@4x.png" class="draggable sticker" id="fontsticker">
+          <img src="images/stickers/Asset 71@4x.png" class="draggable sticker" id="hellosticker">
+          <img src="images/stickers/Asset 72@4x.png" class="draggable sticker" id="hmwsticker">
+          <img src="images/stickers/Asset 73@4x.png" class="draggable sticker" id="lucksticker">
+          <img src="images/stickers/Asset 69@4x.png" class="draggable sticker" id="finalsticker">
+          <img src="images/stickers/Asset 75@4x.png" class="draggable sticker" id="simplifysticker">
+          <img src="images/stickers/Asset 76@4x.png" class="draggable sticker" id="uxsticker">
+          <img src="images/stickers/Asset 67@4x.png" class="draggable sticker" id="catsticker">
+          <!-- <img src="images/stickers/Asset77@4x.png" class="draggable" id="beachsticker"> -->
+      </div>
+
+      <script>
+        $( function() {
+          $( ".draggable" ).draggable({
+            stack: ".draggable"
+          });
+        });
+      </script>
+      <script>
+        var stickers = document.getElementsByClassName("draggable");
+        for (var i = 0; i < stickers.length; i++) {
+            var item = stickers[i];
+            var plusOrMinus = Math.random() < 0.5 ? -1 : 1;
+            randdeg = plusOrMinus*Math.round(Math.random() * 15);
+            item.style.transform = "rotate("+randdeg+"deg)";
+        }
+        //
+        // function getRandomInt(min, max) {
+        //   min = Math.ceil(min);
+        //   max = Math.floor(max);
+        //   return Math.floor(Math.random() * (max - min)) + min; //The maximum is exclusive and the minimum is inclusive
+        // }
+        //
+        // var maxwidth = document.getElementById("stickers").offsetWidth;
+        // var maxheight = 500;
+        // for (var i = 0; i < stickers.length; i++) {
+        //     var item = stickers[i];
+        //     item.style.position = 'absolute';
+        //     item.style.left = getRandomInt(0,maxwidth-220).toString() + "px";
+        //     item.style.top = getRandomInt(0,maxheight-100).toString() + "px";
+        // }
+      </script>
+
+
+
     </div>
 
+
+    <footer id="footer">© Vicky Ye, made with 💀</footer>
+
   </div>
+
+
+<svg height="0" xmlns="http://www.w3.org/2000/svg">
+    <filter id="drop-shadow">
+        <feGaussianBlur in="SourceAlpha" stdDeviation="4"/>
+        <feOffset dx="1" dy="1" result="offsetblur"/>
+        <feFlood flood-color="rgba(0,0,0,0.1)"/>
+        <feComposite in2="offsetblur" operator="in"/>
+        <feMerge>
+            <feMergeNode/>
+            <feMergeNode in="SourceGraphic"/>
+        </feMerge>
+    </filter>
+</svg>
+
+
+<script src="js/stickers.js"></script>
 
 
 
 </body>
+
+
+<script>
+document.getElementById("sparkbutton").addEventListener("click", sparkChange);
+var sparkswitch = 0;
+function sparkChange() {
+  var curimg = document.getElementById("sparkimg").src;
+  if (curimg.includes("sparkoff.png")) {
+    document.getElementById("sparkimg").src = "images/sparkon.png";
+    sparkswitch = 1;
+  } else {
+    document.getElementById("sparkimg").src = "images/sparkoff.png";
+    sparkswitch = 0;
+  }
+}
+</script>
+
+
+<script>
+function getRotationDegrees(obj) {
+    var matrix = obj.css("-webkit-transform") ||
+    obj.css("-moz-transform")    ||
+    obj.css("-ms-transform")     ||
+    obj.css("-o-transform")      ||
+    obj.css("transform");
+    if(matrix !== 'none') {
+        var values = matrix.split('(')[1].split(')')[0].split(',');
+        var a = values[0];
+        var b = values[1];
+        var angle = Math.round(Math.atan2(b, a) * (180/Math.PI));
+    } else { var angle = 0; }
+
+    if(angle < 0) angle +=360;
+    return angle;
+}
+
+$('.draggable').mousedown(function(){
+    $(this).addClass("mouseDown");
+    var currdeg = getRotationDegrees($(this));
+    $(this).css({
+        "-webkit-transform": "rotate("+ (currdeg+10) +"deg)",
+        "-moz-transform": "rotate("+ (currdeg+10) +"deg)",
+        "transform": "rotate("+ (currdeg+10) +"deg)" /* For modern browsers(CSS3)  */
+    });
+});
+$('.draggable').mouseup(function(){
+    $(this).removeClass("mouseDown");
+    var currdeg = getRotationDegrees($(this));
+    $(this).css({
+        "-webkit-transform": "rotate("+ (currdeg-10) +"deg)",
+        "-moz-transform": "rotate("+ (currdeg-10) +"deg)",
+        "transform": "rotate("+ (currdeg-10) +"deg)" /* For modern browsers(CSS3)  */
+    });
+});
+
+  // changes position of sticker to relative whenever dragged so it doesn't jump lol
+  $(".draggable").mousedown(function(){
+    $(this).css({position: 'relative'});
+  });
+  $(".draggable").mouseup(function(){
+    if ($(this).css('position') !== 'absolute'){
+        $(this).css({position: 'absolute'});
+    }
+  });
+
+
+
+
+</script>
+
+
+
 
 </html>
