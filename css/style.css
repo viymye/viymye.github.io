@@ -1,0 +1,149 @@
+html, body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #ebebeb;
+}
+
+.container {
+  padding: 20px;
+  max-width: 1800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+p, h1 {
+  /* font-family: 'Times New Roman', serif; */
+  font-family: 'Nanum Myeongjo', serif;
+  font-size: 4em;
+  line-height: 1.3em;
+  font-weight: 400;
+}
+
+
+.content {
+  width: 65%;
+  margin-left: auto;
+  margin-right: 0;
+  min-width: 800px;
+}
+
+.topline {
+  margin-top: 200px;
+  font-family: 'Xanh Mono', monospace;
+  font-size: 1.4em;
+  padding-top: 20px;
+  border-top: 1px solid;
+}
+
+.textimg{
+    width: auto;
+    height: 0.6em;
+    vertical-align: middle;
+ }
+
+span#reflink{
+  font-size: 0.3em;
+  vertical-align: top;
+
+  padding-left:10px;
+  padding-right:10px;
+
+  line-height: 200%;
+
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  border: 1px solid blue;
+
+  background-color: blue;
+  color: white;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+span#reflink:hover {
+  color: blue;
+  background-color: white;
+}
+
+footer {
+  font-family: 'Xanh Mono', monospace;
+  float: right;
+}
+
+
+
+
+.click-to-copy-container {
+  position: relative;
+}
+
+button.click-to-copy {
+  text-decoration: underline;
+  background: none;
+  border: none;
+  letter-spacing: -0.2px;
+  transition: all .2s ease-in-out;
+  font-family: 'Nanum Myeongjo', serif;
+  font-size: 1em;
+  line-height: 1.3em;
+  font-weight: 400;
+  color: blue;
+  cursor: pointer;
+}
+
+button:hover span {
+  display: none;
+}
+
+button.click-to-copy:hover:before {
+  content: "viymye@gmail.com"
+}
+
+button.click-to-copy:hover {
+  color: #00008B;
+}
+
+button.click-to-copy + span {
+  /* We make the span hidden by default. In this case, using display: none; isn't an issue from an accessibility standpoint, since we don't want screen readers to pick this up unless the user clicks on the button */
+  display: none;
+  /* From here on, just styling purposes 👇🏻 */
+  background: blue;
+  border-radius: 50%;
+  position: absolute;
+  font-family: 'Xanh Mono', monospace;
+  line-height: 150%;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 13px;
+  letter-spacing: .4px;
+  color: white;
+  bottom: 40%;
+  right: 30%;
+  transform: rotate(15deg);
+}
+
+/* Styles for the tooltip arrow */
+button.click-to-copy + span:after {
+	right: 100%;
+	top: 50%;
+	border: solid transparent;
+	content: "";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(218, 218, 218, 0);
+	border-right-color: #DADADA;
+	border-width: 6px;
+	margin-top: -6px;
+}
+
+/* When the click event is fired, and the .is-copied class is added to the button, show the tooltip */
+button.click-to-copy.is-copied + span {
+  display: initial;
+}

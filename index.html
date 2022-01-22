@@ -11,22 +11,28 @@
   <meta name="author" content="Vicky Ye">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/styles.css">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="css/style.css">
   <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
-  <link href="https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400;600&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Lato|Spectral:300,800&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Martel+Sans&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Xanh+Mono:ital@0;1&display=swap" rel="stylesheet">
+
+
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400;600&display=swap" rel="stylesheet"> -->
+  <!-- <link href="https://fonts.googleapis.com/css?family=Lato|Spectral:300,800&display=swap" rel="stylesheet"> -->
+  <!-- <link href="https://fonts.googleapis.com/css?family=Martel+Sans&display=swap" rel="stylesheet"> -->
   <link rel="icon" href="images/favicon.png" sizes="32x32" type="image/png">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script> -->
 
   <script src="js/jquery-3.4.1.min.js"></script>
   <script src="js/jquery-ui.min.js"></script>
-  <script src="js/cursor.js"></script>
-  <script src="js/titlefx.js"></script>
+  <!-- <script src="js/cursor.js"></script> -->
+  <!-- <script src="js/titlefx.js"></script> -->
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126299862-1"></script>
@@ -43,255 +49,82 @@
 <body>
 
   <div class="container">
-    <button id="sparkbutton"><img id="sparkimg" src="images/sparkoff.png" width="20px"></button>
-
-    <!-- Side navigation -->
-    <!-- <div class="sidenav">
-      <a href=""><img src="images/smiley.png" style="width:40px;"></a>
-      <h1>Vicky Ye, designer of <i>digital products</i>, in pursuit of <i>delight</i> ™</h1>
-      <a href="#" class="navlink">Work</a>
-      <a href="#" class="navlink">Play</a>
-      <a href="#" class="navlink">About</a>
-    </div> -->
-
-    <!-- Page content -->
     <div class="main">
-      <div class="header">
-        <svg width="551px" height="149px" viewBox="15 0 550 159" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-            <defs>
-                <filter id="myblurfilter" x="-50%" y="-50%" width="200%" height="200%">
-                  <feGaussianBlur stdDeviation="5" result="blur" />
-                </filter>
-                <polygon id="header-fnv" points="93.8 41.15 77.15 53.45 49.85 112.85 49.7 112.7 46.7 119.45 16.1 52.85 0.65 41.15 45.65 41.15 35.3 49.7 52.4 90.05 69.2 51.8 59.3 41.15 73.7 41.15 73.7 41.6 73.85 41.15"></polygon>
-                <path d="M90.05,113 L100.85,102.5 L100.85,59.75 L90.05,54.2 L100.85,47.6 L109.7,42.2 L118.85,36.65 L118.85,102.5 L130.4,113 L90.05,113 Z M99.35,17 C99.35,10.85 104.45,5.6 110.75,5.6 C116.9,5.6 122.15,10.85 122.15,17 C122.15,23.3 116.9,28.4 110.75,28.4 C104.45,28.4 99.35,23.3 99.35,17 Z" id="header-fni"></path>
-                <path d="M174.05,114.5 C152.45,114.5 138.2,99.35 138.2,79.4 C138.2,55.4 154.55,39.65 177.35,39.65 C191.45,39.65 202.7,48.5 202.7,60.65 C202.7,66.65 198.8,72.2 191.9,72.2 C186.35,72.2 181.25,68.75 181.25,61.25 C181.25,55.25 184.7,46.7 175.7,46.7 C164.45,46.7 155.15,56.6 155.15,71 C155.15,89.3 165.65,99.35 180.2,99.35 C189.5,99.35 200,95.15 204.95,85.25 C204.95,102.2 189.05,114.5 174.05,114.5 Z" id="header-fnc"></path>
-                <polygon id="header-fnk" points="211.7 113 222.65 102.35 222.65 24.95 211.85 19.7 240.65 0.5 240.5 69.95 245.3 69.95 267.05 52.4 258.5 41.15 293.3 41.15 285.5 47.15 258.8 68.3 286.55 102.2 298.55 112.85 261.05 112.85 267.05 107 244.7 79.4 244.4 79.55 243.5 78.2 240.5 78.2 240.5 102.5 252.2 113"></polygon>
-                <path d="M380,41.15 L363.65,53.3 L332.3,123.65 C326.75,136.85 319.55,148.55 307.1,148.55 C297.05,148.55 291.2,144.5 287.3,136.55 L304.1,117.2 C302.6,128.3 308.45,131.3 313.25,131.3 C319.55,131.3 323.3,122.3 325.25,119 L328.85,110.9 L302.3,52.85 L286.85,41.15 L331.85,41.15 L320.45,50.45 L338.3,89.9 L355.25,51.8 L345.5,41.15 L359.9,41.15 L359.9,41.45 L360.05,41.15 L380,41.15 Z" id="header-fny"></path>
-                <path d="M503.9,41.15 L487.55,53.3 L456.2,123.65 C450.65,136.85 443.45,148.55 431,148.55 C420.95,148.55 415.1,144.5 411.2,136.55 L428,117.2 C426.5,128.3 432.35,131.3 437.15,131.3 C443.45,131.3 447.2,122.3 449.15,119 L452.75,110.9 L426.2,52.85 L410.75,41.15 L455.75,41.15 L444.35,50.45 L462.2,89.9 L479.15,51.8 L469.4,41.15 L483.8,41.15 L483.8,41.45 L483.95,41.15 L503.9,41.15 Z" id="header-lny"></path>
-                <path d="M538.25,114.5 C515,114.5 503,96.95 503,78.5 C503,57.5 517.25,39.65 539.15,39.65 C551.6,39.65 568.85,45.8 570.35,66.65 L570.5,66.65 L570.5,74.15 L519.95,74.15 C520.55,89.3 530,99.35 544.85,99.35 C555.35,99.35 564.05,94.85 569.9,85.4 C569.9,102.35 554,114.5 538.25,114.5 Z M536.9,46.7 C528.8,46.7 520.1,53.9 519.95,66.65 L551.3,66.65 C551.3,54.8 546.35,46.7 536.9,46.7 Z" id="header-lne"></path>
-            </defs>
-            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                <g id="Path" fill-rule="nonzero">
-                    <use fill="#FFFFFF" xlink:href="#header-fnv"></use>
-                </g>
-                <g id="Combined-Shape" fill-rule="nonzero">
-                    <use fill="#FFFFFF" xlink:href="#header-fni"></use>
-                </g>
-                <g id="Path" fill-rule="nonzero">
-                    <use fill="#FFFFFF" xlink:href="#header-fnc"></use>
-                </g>
-                <g id="Path" fill-rule="nonzero">
-                    <use fill="#FFFFFF" xlink:href="#header-fnk"></use>
-                </g>
-                <g id="Path" fill-rule="nonzero">
-                    <use fill="#FFFFFF" xlink:href="#header-fny"></use>
-                </g>
-                <g id="Path" fill-rule="nonzero">
-                    <use fill="#FFFFFF" xlink:href="#header-lny"></use>
-                </g>
-                <g id="Combined-Shape" fill-rule="nonzero">
-                    <use fill="#FFFFFF" xlink:href="#header-lne"></use>
-                </g>
-            </g>
-        </svg>
-        <!-- <h1>vicky ye</h1> -->
-        <div id="headerdesc">
-          <p>Hi, I'm a digital product designer currently working at Asana. Previously, I studied Information Systems and Human Computer Interaction at Carnegie Mellon University.</p>
-          <!-- <img id="profile" src="images/prof.png"> -->
-        </div>
+
+      <div class="intro">
+
+        <h1>Vicky Ye is a product designer currently building work management tools at <a href="https://asana.com/">Asana</a><img class="textimg" src="images/linkarrow.png">.</h1>
+        <!-- <p>⤳ is a product designer based in San Francisco. Currently at Asana↗ and previously at eBay↗. ❡</p> -->
 
       </div>
 
       <div class="content">
 
-        <div class="work">
-          <h2>work <span class="smoltxt">(THEY'RE ALL LOCKED)</span></h2>
-          <table>
-            <tbody>
-              <tr>
-                <td>01</td>
-                <td>EBAY FASHION</td>
-                <td>INTERNSHIP, PRODUCT</td>
-                <td><img src="images/lock.png" height="20px"></td>
-              </tr>
-              <tr>
-                <td>02</td>
-                <td>NEWS APP DESIGN</td>
-                <td>SELF-INITIATED, UX</td>
-                <td><img src="images/lock.png" height="20px"></td>
-              </tr>
-              <tr>
-                <td>03</td>
-                <td>COURSERA CASE STUDY</td>
-                <td>DESIGN CHALLENGE, UX & UI</td>
-                <td><img src="images/lock.png" height="20px"></td>
-              </tr>
-            </tbody>
-          </table>
+        <p class="topline" style="text-align:left;">
+            Product Designer @
+            <span style="float:right;">
+                / Current
+            </span>
+        </p>
 
-        </div>
+        <h1>Asana</h1>
+
+        <p>Currently leading design on the Automation team, incrementally building a low-code workflow automation system<a href="https://asana.com/product/automation"><span id="reflink">1</span></a>.
+        </p>
+
+
+        <p class="topline" style="text-align:left;">
+            Product Design Intern @
+            <span style="float:right;">
+                / 2019
+            </span>
+        </p>
+
+        <h1>Asana</h1>
+
+        <p>Worked on & shipped features that help teams streamline their work intake process<a href="https://asana.com/guide/help/tasks/templates"><span id="reflink">2</span></a><a href="https://blog.asana.com/2020/08/forms-branching-customization/"><span id="reflink">3</span></a></p>
+
+
+        <p class="topline" style="text-align:left;">
+            Product Design Intern @
+            <span style="float:right;">
+                / 2018
+            </span>
+        </p>
+
+        <h1>eBay</h1>
+
+        <p>Prototyped and conducted user tests to propose more effective interactions for browsing and comparing listings on the eBay mobile app.</p>
 
       </div>
 
 
+      <p class="topline" style="text-align:left;">
+        Contact me
+      </p>
 
-
-      <div id="stickers">
-          <!-- <img src="images/stickers/Asset 70@4x.png" width="92" id="readsticker" class="draggable">
-          <img src="images/stickers/Asset 67@4x.png" width="77" id="finalsticker" class="draggable">
-          <img src="images/stickers/Asset 71@4x.png" width="99" id="lucksticker" class="draggable">
-          <img src="images/stickers/Asset 74@4x.png" width="99" id="sublimesticker" class="draggable">
-          <img src="images/stickers/Asset 69@4x.png" width="88" id="cookiesticker" class="draggable">
-          <img src="images/stickers/Asset 76@4x.png" width="94" id="helloticker" class="draggable">
-          <img src="images/stickers/Asset 72@4x.png" width="112" id="simplifysticker" class="draggable">
-          <img src="images/stickers/Asset 75@4x.png" width="89" id="uxsticker" class="draggable">
-          <img src="images/stickers/Asset 73@4x.png" width="102" id="beachsticker" class="draggable">
-          <img src="images/stickers/Asset 68@4x.png" width="117" id="cornersticker" class="draggable"> -->
-          <img src="images/stickers/Asset 74@4x.png" class="draggable sticker" id="sublimesticker">
-          <img src="images/stickers/Asset 68@4x.png" class="draggable sticker" id="cornersticker">
-          <img src="images/stickers/Asset 70@4x.png" class="draggable sticker" id="fontsticker">
-          <img src="images/stickers/Asset 71@4x.png" class="draggable sticker" id="hellosticker">
-          <img src="images/stickers/Asset 72@4x.png" class="draggable sticker" id="hmwsticker">
-          <img src="images/stickers/Asset 73@4x.png" class="draggable sticker" id="lucksticker">
-          <img src="images/stickers/Asset 69@4x.png" class="draggable sticker" id="finalsticker">
-          <img src="images/stickers/Asset 75@4x.png" class="draggable sticker" id="simplifysticker">
-          <img src="images/stickers/Asset 76@4x.png" class="draggable sticker" id="uxsticker">
-          <img src="images/stickers/Asset 67@4x.png" class="draggable sticker" id="catsticker">
-          <!-- <img src="images/stickers/Asset77@4x.png" class="draggable" id="beachsticker"> -->
-      </div>
-
-      <script>
-        $( function() {
-          $( ".draggable" ).draggable({
-            stack: ".draggable"
-          });
-        });
-      </script>
-      <script>
-        var stickers = document.getElementsByClassName("draggable");
-        for (var i = 0; i < stickers.length; i++) {
-            var item = stickers[i];
-            var plusOrMinus = Math.random() < 0.5 ? -1 : 1;
-            randdeg = plusOrMinus*Math.round(Math.random() * 15);
-            item.style.transform = "rotate("+randdeg+"deg)";
-        }
-        //
-        // function getRandomInt(min, max) {
-        //   min = Math.ceil(min);
-        //   max = Math.floor(max);
-        //   return Math.floor(Math.random() * (max - min)) + min; //The maximum is exclusive and the minimum is inclusive
-        // }
-        //
-        // var maxwidth = document.getElementById("stickers").offsetWidth;
-        // var maxheight = 500;
-        // for (var i = 0; i < stickers.length; i++) {
-        //     var item = stickers[i];
-        //     item.style.position = 'absolute';
-        //     item.style.left = getRandomInt(0,maxwidth-220).toString() + "px";
-        //     item.style.top = getRandomInt(0,maxheight-100).toString() + "px";
-        // }
-      </script>
-
+      <h1>
+        <span class="click-to-copy-container">
+          <button class="click-to-copy"title="Click to Copy Email Address">
+            <span>Email</span>
+          </button>
+          <span>Copied</span>
+        </span>
+      </h1>
 
 
     </div>
 
 
-    <footer id="footer">© Vicky Ye, made with 💀</footer>
+    <footer id="footer">© Vicky Ye 2022</footer>
 
   </div>
 
 
-<svg height="0" xmlns="http://www.w3.org/2000/svg">
-    <filter id="drop-shadow">
-        <feGaussianBlur in="SourceAlpha" stdDeviation="4"/>
-        <feOffset dx="1" dy="1" result="offsetblur"/>
-        <feFlood flood-color="rgba(0,0,0,0.1)"/>
-        <feComposite in2="offsetblur" operator="in"/>
-        <feMerge>
-            <feMergeNode/>
-            <feMergeNode in="SourceGraphic"/>
-        </feMerge>
-    </filter>
-</svg>
 
-
-<script src="js/stickers.js"></script>
-
-
+  <script src="js/copylink.js"></script>
 
 </body>
-
-
-<script>
-document.getElementById("sparkbutton").addEventListener("click", sparkChange);
-var sparkswitch = 0;
-function sparkChange() {
-  var curimg = document.getElementById("sparkimg").src;
-  if (curimg.includes("sparkoff.png")) {
-    document.getElementById("sparkimg").src = "images/sparkon.png";
-    sparkswitch = 1;
-  } else {
-    document.getElementById("sparkimg").src = "images/sparkoff.png";
-    sparkswitch = 0;
-  }
-}
-</script>
-
-
-<script>
-function getRotationDegrees(obj) {
-    var matrix = obj.css("-webkit-transform") ||
-    obj.css("-moz-transform")    ||
-    obj.css("-ms-transform")     ||
-    obj.css("-o-transform")      ||
-    obj.css("transform");
-    if(matrix !== 'none') {
-        var values = matrix.split('(')[1].split(')')[0].split(',');
-        var a = values[0];
-        var b = values[1];
-        var angle = Math.round(Math.atan2(b, a) * (180/Math.PI));
-    } else { var angle = 0; }
-
-    if(angle < 0) angle +=360;
-    return angle;
-}
-
-$('.draggable').mousedown(function(){
-    $(this).addClass("mouseDown");
-    var currdeg = getRotationDegrees($(this));
-    $(this).css({
-        "-webkit-transform": "rotate("+ (currdeg+10) +"deg)",
-        "-moz-transform": "rotate("+ (currdeg+10) +"deg)",
-        "transform": "rotate("+ (currdeg+10) +"deg)" /* For modern browsers(CSS3)  */
-    });
-});
-$('.draggable').mouseup(function(){
-    $(this).removeClass("mouseDown");
-    var currdeg = getRotationDegrees($(this));
-    $(this).css({
-        "-webkit-transform": "rotate("+ (currdeg-10) +"deg)",
-        "-moz-transform": "rotate("+ (currdeg-10) +"deg)",
-        "transform": "rotate("+ (currdeg-10) +"deg)" /* For modern browsers(CSS3)  */
-    });
-});
-
-  // changes position of sticker to relative whenever dragged so it doesn't jump lol
-  $(".draggable").mousedown(function(){
-    $(this).css({position: 'relative'});
-  });
-  $(".draggable").mouseup(function(){
-    if ($(this).css('position') !== 'absolute'){
-        $(this).css({position: 'absolute'});
-    }
-  });
-
-
-
-
-</script>
-
-
 
 
 </html>
