@@ -65,6 +65,11 @@ span#reflink{
 
 a {
   text-decoration: none;
+  color: green;
+}
+
+a:hover {
+  color: #006400;
 }
 
 span#reflink:hover {
