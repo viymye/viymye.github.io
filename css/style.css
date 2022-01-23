@@ -56,9 +56,9 @@ span#reflink{
 
   -moz-border-radius: 50%;
   border-radius: 50%;
-  border: 1px solid blue;
+  border: 1px solid green;
 
-  background-color: blue;
+  background-color: green;
   color: white;
   text-align: center;
 }
@@ -68,7 +68,7 @@ a {
 }
 
 span#reflink:hover {
-  color: blue;
+  color: green;
   background-color: white;
 }
 
@@ -96,7 +96,7 @@ button.click-to-copy {
   font-size: 1em;
   line-height: 1.3em;
   font-weight: 400;
-  color: blue;
+  color: green;
   cursor: pointer;
 }
 
@@ -109,14 +109,14 @@ button.click-to-copy:hover:before {
 }
 
 button.click-to-copy:hover {
-  color: #00008B;
+  color: #006400;
 }
 
 button.click-to-copy + span {
   /* We make the span hidden by default. In this case, using display: none; isn't an issue from an accessibility standpoint, since we don't want screen readers to pick this up unless the user clicks on the button */
   display: none;
   /* From here on, just styling purposes 👇🏻 */
-  background: blue;
+  background: green;
   border-radius: 50%;
   position: absolute;
   font-family: 'Xanh Mono', monospace;
