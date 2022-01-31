@@ -15,9 +15,12 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
 
+  <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Xanh+Mono:ital@0;1&display=swap" rel="stylesheet"> -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Xanh+Mono:ital@0;1&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400&family=Nanum+Myeongjo:wght@700&display=swap" rel="stylesheet">
 
 
   <!-- <link href="https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400;600&display=swap" rel="stylesheet"> -->
@@ -48,12 +51,17 @@
 
 <body>
 
-  <div class="container">
+  <div class="container" style="min-height:100vh;">
 
-    <!-- <div class="header"> -->
-      <!-- <h1><a href="/">Vicky Ye</a></h1> -->
-      <p><a href="./">Vicky Ye</a> is a product designer. She's currently at <a href="https://asana.com/">Asana</a><img class="textimg" src="images/linkarrow.png">, building tools that teams depend on to manage their work.</p>
-    <!-- </div> -->
+    <div class="header">
+        <div class="header-left">
+          Vicky Ye
+        </div>
+        <div class="header-right">
+            <a href="./about.html" class="nav">About</a>
+        </div>
+        <p>is a product designer. She's currently at <a href="https://asana.com/">Asana</a><img class="textimg" src="images/linkarrow.png">, building tools that teams depend on to manage their work.</p>
+    </div>
 
     <div class="main">
 
@@ -64,76 +72,122 @@
 
       </div>
 
+
       <div class="content">
 
-        <p class="topline" style="text-align:left;">
-            Product Designer @
-            <span style="float:right;">
-                / Current
-            </span>
-        </p>
+        <div class="row">
+          <div class="rowimg"></div>
 
-        <h1><a href="https://asana.com/">Asana</a><img class="textimg" src="images/linkarrow.png"></h1>
+          <div class="topline" style="text-align:left;">
+              Product Designer
+              <span style="float:right;">
+                <img style="width:16px" src="images/lock.png">
+                  <!-- <a href="/asana">Read about selected projects</a> <img class="textimg" src="images/linkarrow.png"> -->
+              </span>
+            <h1><a href="https://asana.com/"><span class="rowtitle">Asana</span></a></h1>
+            <p>Leading design on the <a href="https://asana.com/product/automation" target="_blank">Automation</a> team, incrementally building a low-code workflow automation system.<a href="https://asana.com/product/automation"><span id="reflink">1</span></a>
+            </p>
+          </div>
 
-        <p>Leading design on the Automation team, incrementally building a low-code workflow automation system.<a href="https://asana.com/product/automation"><span id="reflink">1</span></a>
-        </p>
-
-
-        <p class="topline" style="text-align:left;">
-            Product Design Intern @
-            <span style="float:right;">
-                / 2019
-            </span>
-        </p>
-
-        <h1><a href="https://asana.com/">Asana</a><img class="textimg" src="images/linkarrow.png"></h1>
-
-        <p>Worked on & shipped features that help teams streamline their work intake process.<a href="https://asana.com/guide/help/tasks/templates"><span id="reflink">2</span></a><a href="https://blog.asana.com/2020/08/forms-branching-customization/"><span id="reflink">3</span></a></p>
+        </div>
 
 
-        <p class="topline" style="text-align:left;">
-            Product Design Intern @
-            <span style="float:right;">
-                / 2018
-            </span>
-        </p>
+        <div class="row">
+          <div class="rowimg"></div>
 
-        <h1><a href="https://ebay.com/">eBay</a><img class="textimg" src="images/linkarrow.png"></h1>
+            <div class="topline" style="text-align:left;">
+                Product Design Internship
+                <span style="float:right;">
+                    <img style="width:16px" src="images/lock.png">
+                </span>
 
-        <p>Prototyped and conducted user tests to propose more effective interactions for browsing and comparing listings on the eBay mobile app.</p>
+            <h1><span class="rowtitle">eBay</span></h1>
+
+            <p>Prototyped and conducted user tests to propose more effective interactions for browsing and comparing listings on the eBay mobile app.</p>
+          </div>
+
+        </div>
+
+
+        <div class="row">
+          <div class="rowimg"></div>
+
+          <div class="topline" style="text-align:left;">
+              Case Study
+              <span style="float:right;">
+                  <a href="./news.html">See project</a> <img class="textimg" src="images/linkarrow.png">
+              </span>
+
+            <h1><a href="./news.html"><span class="rowtitle">News App</span></a></h1>
+
+            <p>A concept for a mobile app designed to help users develop well-rounded news reading habits.
+            </p>
+          </div>
+
+        </div>
+
+
+        <div class="row">
+          <div class="rowimg"></div>
+
+          <div class="topline" style="text-align:left;">
+              Case Study
+              <span style="float:right;">
+                  <a href="./coursera.html">See project</a> <img class="textimg" src="images/linkarrow.png">
+              </span>
+
+            <h1><a href="./coursera.html"><span class="rowtitle">Coursera Redesign</span></a></h1>
+
+            <p>A product, UI, and interaction case study exploring ways to make Coursera’s platform more conducive to social learning.
+            </p>
+          </div>
+
+        </div>
+
+
+        <!-- <div class="row">
+          <div class="rowimg"></div>
+
+          <div class="topline" style="text-align:left;">
+            <h1 style="float:left;"><a href="./misc"><span class="rowtitle">Other stuff</span></a></h1>
+              <span style="float:right;">
+                  <a href="/asana">See non-work stuff</a> <img class="textimg" src="images/linkarrow.png">
+              </span>
+          </div>
+
+          <p>The byproducts of dabblings outside of just drawing rectangles: motion design, interaction design concepts, past print design and branding projects, etc.</p>
+
+        </div> -->
+
 
       </div>
 
 
-      <p class="topline" style="text-align:left;">
-        About (cont.) ✿
-      </p>
-      <div class="header">
-      <p>
-        She's originally a self-taught designer and in early days, learned by making Naruto graphics for her blog. She's still wholly driven by curiosity today.
-        She finds deep satisfaction from immsersing in complex, tangly problem spaces and in distilling them into clear, focused, and achievable solutions that fully account for technical limitations.
-      </p>
-    </div>
-
-
-      <h1>
-        <span class="click-to-copy-container">
-          <button class="click-to-copy"title="Click to Copy Email Address">
-            <span>Email</span>
-          </button>
-          <span>Copied</span>
-        </span>
-      </h1>
-
-      <h1 class=""><a href="vickyye_resume.pdf"><span>Resume</span></a><img class="textimg" src="images/linkarrow.png"></h1>
-
-      <br><br><br>
-
 
     </div>
 
 
-    <footer id="footer">© Vicky Ye 2022</footer>
+    <footer style="clear: both;">
+      <div class="foot">
+        <h1>Contact</h1>
+
+          <div class="click-to-copy-container">
+            <button class="click-to-copy"title="Click to Copy Email Address">
+              <span>Email</span>
+            </button>
+            <span>Copied</span>
+          </div>
+
+          <div>
+            <a href="vickyye_resume.pdf" target="_blank" class="resume"><span>Resume</span></a><img class="textimg" src="images/linkarrow.png">
+          </div>
+          <br><br><br>
+       <p>© Vicky Ye, 2022</p>
+      </div>
+
+    </footer>
+
+
 
   </div>
 
