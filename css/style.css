@@ -324,30 +324,19 @@ button.click-to-copy.is-copied + span {
 
 
 
-/* @media (max-width: 1000px) {
-  .main {
-    width: auto;
-    padding: 0 10px;
-  }
-
-  p, h1 {
-    font-size: 3rem;
-  }
-
-  .topline {
-    font-size: 1rem;
-  }
-
-} */
-
 
 @media (max-width: 700px) {
+
+
+
 
   .container {
     width: auto;
     margin: 0px;
     margin-left: auto;
     margin-right: auto;
+    /* background-color: #F8F8F8; */
+    overflow-y: scroll
   }
 
   .intro {
@@ -369,6 +358,9 @@ button.click-to-copy.is-copied + span {
     padding: 0;
   }
 
+  .topline {
+    width: 100%;
+  }
 
 
 
